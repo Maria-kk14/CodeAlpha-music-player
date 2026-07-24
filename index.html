@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria's Music Player</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="music-player">
+<div class="music-icon">
+
+🎵
+
+</div>
+    <!-- Album Cover -->
+    <div class="cover">
+        <img src="images/cover1.jpg" id="cover">
+    </div>
+
+    <!-- Song Information -->
+    <div class="song-info">
+
+        <h2 id="title">Perfect</h2>
+
+        <p id="artist">Ed Sheeran</p>
+        <p class="playing">🎵 Now Playing</p>
+
+    </div>
+
+    <!-- Progress Bar -->
+
+    <div class="progress-area">
+
+        <span id="current-time">0:00</span>
+
+        <input type="range"
+        id="progress"
+        value="0"
+        min="0"
+        max="100">
+
+        <span id="duration">3:45</span>
+
+    </div>
+
+    <!-- Controls -->
+
+    <div class="controls">
+
+        <button id="prev">
+
+            <i class="fa-solid fa-backward-step"></i>
+
+        </button>
+
+        <button id="play">
+
+            <i class="fa-solid fa-play"></i>
+
+        </button>
+
+        <button id="next">
+
+            <i class="fa-solid fa-forward-step"></i>
+
+        </button>
+
+    </div>
+
+    <!-- Volume -->
+
+    <div class="volume">
+
+        <i class="fa-solid fa-volume-high"></i>
+
+        <input type="range"
+        id="volume"
+        min="0"
+        max="100"
+        value="100">
+
+    </div>
+    <div class="playlist">
+
+    <h3>Playlist</h3>
+
+    <ul id="playlist"></ul>
+
+</div>
+<p class="footer">
+    Made with ❤️ by Maria 
+</p>
+</div>
+<audio id="audio"></audio>
+<script src="script.js"></script>
+
+</body>
+</html>
